@@ -1,0 +1,11 @@
+/* ============================================================
+   App.css — Minimal App-level Styles
+   ============================================================
+   Most styles are in component/page-specific CSS files.
+   This file only contains app-wide layout helpers.
+   ============================================================ */
+
+/* Ensure content sits below the fixed navbar */
+.home-page {
+  padding-top: 0; /* Hero handles its own spacing */
+}

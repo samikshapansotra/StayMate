@@ -1,0 +1,246 @@
+/* ============================================================
+   AdminLogin.css — Styles for the Admin Login Page
+   ============================================================ */
+
+.admin-login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f5f9; /* Slightly darker/cooler gray than main site */
+  padding: 2rem;
+}
+
+.admin-login-container {
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Header Area */
+.admin-login-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.admin-login-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.admin-login-brand-icon {
+  font-size: 2rem;
+}
+
+.admin-login-brand-text {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--color-heading);
+  letter-spacing: -0.5px;
+}
+
+.admin-badge {
+  background: var(--color-heading);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.35rem 0.8rem;
+  border-radius: 20px;
+}
+
+/* Login Box */
+.admin-login-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+}
+
+.admin-login-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-heading);
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+
+.admin-login-subtitle {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  text-align: center;
+  margin: 0 0 2rem;
+}
+
+/* Form Styles */
+.admin-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.admin-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.admin-form-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-heading);
+}
+
+.admin-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 10px;
+  background: #f8fafc;
+  transition: all 0.2s ease;
+}
+
+.admin-input-wrapper:focus-within {
+  border-color: var(--color-primary);
+  background: #fff;
+  box-shadow: 0 0 0 3px var(--color-primary-light);
+}
+
+.admin-input-wrapper.input-error {
+  border-color: #ef4444;
+}
+
+.admin-input-wrapper.input-error:focus-within {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.admin-input-icon {
+  color: #94a3b8;
+  flex-shrink: 0;
+}
+
+.admin-input-wrapper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--color-heading);
+}
+
+.admin-input-wrapper input::placeholder {
+  color: #94a3b8;
+}
+
+.admin-password-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #94a3b8;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.admin-password-toggle:hover {
+  color: var(--color-heading);
+}
+
+.admin-form-error {
+  font-size: 0.8rem;
+  color: #ef4444;
+  font-weight: 500;
+  margin-top: 0.1rem;
+}
+
+/* Form Options (Remember Me / Forgot Pwd) */
+.admin-form-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+}
+
+.admin-remember-me {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.admin-remember-me input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.admin-forgot-password {
+  font-size: 0.88rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.admin-forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Submit Button */
+.admin-login-btn {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  background: var(--color-heading);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.admin-login-btn:hover {
+  background: #000;
+  transform: translateY(-2px);
+}
+
+/* Back Link */
+.admin-back-link {
+  text-align: center;
+}
+
+.admin-back-link a {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.admin-back-link a:hover {
+  color: var(--color-heading);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .admin-login-box {
+    padding: 2rem 1.5rem;
+  }
+}
