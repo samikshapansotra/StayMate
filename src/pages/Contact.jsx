@@ -153,7 +153,7 @@ function Contact() {
                 <FiMail size={26} />
               </div>
               <h3 className="contact-info-title">Email</h3>
-              <p className="contact-info-value">support@pgfinder.com</p>
+              <p className="contact-info-value">support@staymate.in</p>
             </div>
 
             <div className="contact-info-card">

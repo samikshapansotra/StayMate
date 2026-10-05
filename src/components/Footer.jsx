@@ -36,14 +36,14 @@ function Footer() {
           </ul>
         </div>
 
-        {/* ---------- For Users ---------- */}
+        {/* ---------- For PG Owners ---------- */}
         <div className="footer-col">
-          <h4 className="footer-col-title">For Users</h4>
+          <h4 className="footer-col-title">For PG Owners</h4>
           <ul className="footer-links">
-            <li><Link to="/login">Login</Link></li>
-            <li><Link to="/">Register</Link></li>
-            <li><Link to="/">List Your PG</Link></li>
-            <li><Link to="/">Help &amp; Support</Link></li>
+            <li><Link to="/owner/register">Register as PG Owner</Link></li>
+            <li><Link to="/owner/login">Owner Login</Link></li>
+            <li><Link to="/owner/dashboard">Owner Dashboard</Link></li>
+            <li><Link to="/owner/register">List Your Property</Link></li>
           </ul>
         </div>
 

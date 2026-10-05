@@ -3,7 +3,7 @@
 // ============================================================
 // A standalone login page for administrators.
 // Uses distinct styling from the main site to differentiate
-// the admin area, but retains the PG Finder brand colors.
+// the admin area, but retains the StayMate brand colors.
 // ============================================================
 
 import { useState } from "react";
@@ -61,7 +61,7 @@ function AdminLogin() {
         <div className="admin-login-box">
           <h1 className="admin-login-title">Admin Login</h1>
           <p className="admin-login-subtitle">
-            Sign in to access the PG Finder dashboard
+            Sign in to access the StayMate dashboard
           </p>
 
           <form className="admin-login-form" onSubmit={handleLogin} noValidate>
@@ -75,7 +75,7 @@ function AdminLogin() {
                 <input
                   id="admin-email"
                   type="email"
-                  placeholder="admin@pgfinder.com"
+                  placeholder="admin@staymate.in"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   autoComplete="email"

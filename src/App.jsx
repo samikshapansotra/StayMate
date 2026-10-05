@@ -22,14 +22,20 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
+import OwnerRegister from "./pages/OwnerRegister";
+import OwnerLogin from "./pages/OwnerLogin";
+import OwnerDashboard from "./pages/OwnerDashboard";
 import "./App.css";
 
 // Layout wrapper that conditionally shows Navbar + Footer
 function AppLayout() {
   const location = useLocation();
 
-  // Don't show Navbar/Footer on login page or admin pages
-  const isNoLayoutPage = location.pathname === "/login" || location.pathname.startsWith("/admin");
+  // Don't show Navbar/Footer on login page, admin pages, or owner portal pages
+  const isNoLayoutPage =
+    location.pathname === "/login" ||
+    location.pathname.startsWith("/admin") ||
+    location.pathname.startsWith("/owner");
 
   return (
     <>
@@ -43,6 +49,9 @@ function AppLayout() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/admin/login" element={<AdminLogin />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
+        <Route path="/owner/register" element={<OwnerRegister />} />
+        <Route path="/owner/login" element={<OwnerLogin />} />
+        <Route path="/owner/dashboard" element={<OwnerDashboard />} />
       </Routes>
 
       {!isNoLayoutPage && <Footer />}

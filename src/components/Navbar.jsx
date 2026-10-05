@@ -73,6 +73,9 @@ function Navbar() {
 
         {/* Auth buttons shown inside mobile menu */}
         <li className="navbar-auth-mobile">
+          <Link to="/owner/register" className="btn-list-pg" onClick={closeMenu}>
+            🏠 List Your PG
+          </Link>
           <Link to="/login" className="btn-login" onClick={closeMenu}>
             Login
           </Link>
@@ -84,6 +87,9 @@ function Navbar() {
 
       {/* ---------- Auth Buttons (Desktop) ---------- */}
       <div className="navbar-auth">
+        <Link to="/owner/register" className="btn-list-pg">
+          🏠 List Your PG
+        </Link>
         <Link to="/login" className="btn-login">
           Login
         </Link>

@@ -1,7 +1,7 @@
 // ============================================================
 // About.jsx — About Page
 // ============================================================
-// Explains what PG Finder / StayMate is, its mission, features,
+// Explains what StayMate is, its mission, features,
 // how it works, and who it serves. All content is informational.
 //
 // Reuses the existing design tokens (CSS custom properties),
@@ -35,7 +35,7 @@ function About() {
       <section className="about-hero" id="about-hero">
         <div className="about-hero-overlay"></div>
         <div className="about-hero-content">
-          <h1 className="about-hero-title">About PG Finder</h1>
+          <h1 className="about-hero-title">About StayMate</h1>
           <p className="about-hero-subtitle">
             Making it easier for students to find a comfortable place they can
             call home.
@@ -55,7 +55,7 @@ function About() {
 
           <div className="about-mission-card">
             <p className="about-mission-text">
-              PG Finder is designed to simplify the process of finding suitable
+              StayMate is designed to simplify the process of finding suitable
               PG accommodations for students and tenants. Instead of depending on
               multiple sources or visiting different properties physically, users
               can explore available PGs, compare important details and find
@@ -85,11 +85,11 @@ function About() {
       </section>
 
       {/* ============================
-          SECTION D — What is PG Finder?
+          SECTION D — What is StayMate?
           ============================ */}
-      <section className="section about-what-section" id="what-is-pgfinder">
+      <section className="section about-what-section" id="what-is-staymate">
         <div className="section-container">
-          <h2 className="section-title">What is PG Finder?</h2>
+          <h2 className="section-title">What is StayMate?</h2>
           <p className="section-subtitle">
             A web-based accommodation discovery platform connecting students and
             PG owners
@@ -103,7 +103,7 @@ function About() {
               </div>
               <h3 className="about-what-card-title">For Students</h3>
               <p className="about-what-card-desc">
-                Students can eventually use PG Finder to:
+                Students can eventually use StayMate to:
               </p>
               <ul className="about-what-list">
                 <li>
@@ -134,7 +134,7 @@ function About() {
               </div>
               <h3 className="about-what-card-title">For PG Owners</h3>
               <p className="about-what-card-desc">
-                PG owners can eventually use PG Finder to:
+                PG owners can eventually use StayMate to:
               </p>
               <ul className="about-what-list">
                 <li>
@@ -159,11 +159,11 @@ function About() {
       </section>
 
       {/* ============================
-          SECTION E — Why Choose PG Finder?
+          SECTION E — Why Choose StayMate?
           ============================ */}
-      <section className="section about-why-section" id="why-choose-pgfinder">
+      <section className="section about-why-section" id="why-choose-staymate">
         <div className="section-container">
-          <h2 className="section-title">Why Choose PG Finder?</h2>
+          <h2 className="section-title">Why Choose StayMate?</h2>
           <p className="section-subtitle">
             Features designed to make your accommodation search simple
           </p>
@@ -216,11 +216,11 @@ function About() {
       </section>
 
       {/* ============================
-          SECTION F — How PG Finder Works
+          SECTION F — How StayMate Works
           ============================ */}
-      <section className="section about-how-section" id="how-pgfinder-works">
+      <section className="section about-how-section" id="how-staymate-works">
         <div className="section-container">
-          <h2 className="section-title">How PG Finder Works</h2>
+          <h2 className="section-title">How StayMate Works</h2>
           <p className="section-subtitle">
             Finding your perfect PG is just 4 simple steps away
           </p>
